@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FreeCodeCamp-Calculator/static/css/main.a3781257.css",
+    "main.js": "/FreeCodeCamp-Calculator/static/js/main.fbbdae02.js",
+    "index.html": "/FreeCodeCamp-Calculator/index.html",
+    "main.a3781257.css.map": "/FreeCodeCamp-Calculator/static/css/main.a3781257.css.map",
+    "main.fbbdae02.js.map": "/FreeCodeCamp-Calculator/static/js/main.fbbdae02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3781257.css",
+    "static/js/main.fbbdae02.js"
+  ]
+}
