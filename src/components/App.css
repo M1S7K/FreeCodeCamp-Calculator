@@ -1,0 +1,153 @@
+@import url('http://fonts.cdnfonts.com/css/ds-digital');
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DS-Digital', sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e1e1e1;
+}
+.calculator {
+  width: 95vw;
+  max-width: 500px;
+  height: 95vh;
+  max-height: 700px;
+  border-radius: 1.5rem;
+  box-shadow: -0.5rem 0.5rem 0.5rem #acacac;
+  padding: 2rem;
+  background: rgb(218,218,218);
+  background: linear-gradient(0deg, rgba(218,218,218,1) 95%, rgba(243,243,241,1) 98%);
+}
+.calculator-display {
+  width: 100%;
+  min-height: 8rem;
+  height: auto;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  background: rgb(194,212,196);
+  background: linear-gradient(63deg, rgba(194,212,196,1) 65%, rgba(193,211,197,1) 95%);
+  border: 2rem solid #f4f4f4;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 1rem #acacac, 0 0 0.5rem #acacac;
+}
+.calculator-current-operand {
+  min-height: 3rem;
+  font-size: 3em;
+  font-weight: bold;
+}
+.calculator-previus-operand {
+  min-height: 2rem;
+}
+.calculator-solar-panel {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "A B"
+  "C B"
+  ;
+  background-color: #f4f4f4;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #acacac;
+}
+.calculator-solar-panel-logo {
+  grid-area: A;
+  font-size: 0.5em;
+}
+.calculator-solar-panel-cells {
+  grid-area: C;
+  max-width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5e5044;
+  box-shadow: inset 0 0 1rem #4f4a42;
+}
+.calculator-solar-panel-cell {
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid #6c6354;
+}
+.calculator-switch-on {
+  grid-area: B;
+  font-size: 1.3em;
+  width: 3rem;
+  justify-self: end;
+  background-color: #f18d00;
+  color: #f3f3f3;
+  box-shadow: inset 0rem 0rem 0.2rem #acacac, -0.1rem 0.07rem 0.1rem #acacac;
+  border: #acacac 1px solid;
+  border-radius: 0.3rem;
+}
+.calculator-switch-off {
+  grid-area: B;
+  font-size: 1.3em;
+  width: 3rem;
+  justify-self: end;
+  background-color: #717171;
+  color: #f3f3f3;
+  box-shadow: inset 0rem 0rem 0.2rem #acacac, -0.1rem 0.07rem 0.1rem #acacac;
+  border: #acacac 1px solid;
+  border-radius: 0.3rem;
+}
+.calculator-buttons {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(auto, 100%));
+  grid-template-rows: repeat(5, minmax(auto, 100%));
+}
+.span-two {
+  grid-column: span 2;
+}
+.calculator-button-operation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding: 0.5rem;
+  background-color: #f18d00;
+  color: #f3f3f3;
+  box-shadow: inset 0rem 0rem 0.2rem #acacac, -0.1rem 0.07rem 0.1rem #acacac;
+  border: #acacac 1px solid;
+  border-radius: 0.3rem;
+}
+.calculator-button-digit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background-color: #717171;
+  color: #f3f3f3;
+  box-shadow: inset 0rem 0rem 0.2rem #acacac, -0.1rem 0.07rem 0.1rem #acacac;
+  border: #acacac 1px solid;
+  border-radius: 0.3rem;
+}
+
+
+@media (max-height: 710px) {
+  .calculator-button-digit {
+    font-size: 1.3em;
+    padding: 0.3rem;
+  }
+  .calculator-button-operation {
+    font-size: 1.3em;
+    padding: 0.3rem;
+  }
+}
